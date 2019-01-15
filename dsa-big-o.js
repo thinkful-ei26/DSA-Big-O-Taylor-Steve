@@ -1,3 +1,5 @@
+
+//complexity is O(1)
 function isEven(value){
     if (value % 2 == 0){
       return true;
@@ -6,7 +8,7 @@ function isEven(value){
       return false;
   }
 
-
+//maybe O(n^2)
   function areYouHere(arr1, arr2) {
     for (let i=0; i<arr1.length; i++) {
         const el1 = arr1[i];
@@ -18,7 +20,7 @@ function isEven(value){
     return false;
 }
 
-
+// O(n)
 function doubleArrayValues(array) {
     for (let i=0; i<array.length; i++) {
         array[i] *= 2;
@@ -26,7 +28,7 @@ function doubleArrayValues(array) {
     return array;
 }
 
-
+//O(n)
 function naiveSearch(array, item) {
     for (let i=0; i<array.length; i++) {
         if (array[i] === item) {
@@ -35,7 +37,7 @@ function naiveSearch(array, item) {
     }
 }
 
-
+//O(n^2)
 function createPairs(arr) {
     for (let i = 0; i < arr.length; i++) {
         for(let j = i+1; j < arr.length; j++) {
@@ -44,7 +46,7 @@ function createPairs(arr) {
     }
 }
 
-
+//O(2^n)
 function generateFib(num) {
     let result = [];
     for (let i = 1; i <= num; i++) {
@@ -71,7 +73,7 @@ function generateFib(num) {
     return result;
   }
 
-
+// O(log n)
   function efficientSearch(array, item) {
     let minIndex = 0;
     let maxIndex = array.length - 1;
@@ -95,12 +97,12 @@ function generateFib(num) {
     return -1;
 }
 
-
+//O(1) otherwise undefined
 function findRandomElement(arr) {
     return arr[Math.floor(Math.random() * arr.length)];
 }
 
-
+//O(n)
 function isPrime(n) {
     // if n is less than 2 or a decimal, it's not prime
     if (n < 2 || n % 1 != 0) {
